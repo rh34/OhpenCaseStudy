@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DD6013C5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{D0FC81BE-49FA-45B6-AF3A-E26124A8D174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OhpenCaseStudy.Api.Tests", "OhpenCaseStudy.Api.Tests\OhpenCaseStudy.Api.Tests.csproj", "{11256553-5231-4536-98A2-E44C657A26FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OhpenCaseStudy.Api.Tests", "OhpenCaseStudy.Api.Tests\OhpenCaseStudy.Api.Tests.csproj", "{11256553-5231-4536-98A2-E44C657A26FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OhpenCaseStudy.Domain.Tests", "OhpenCaseStudy.Domain.Tests\OhpenCaseStudy.Domain.Tests.csproj", "{E67D17C9-1DBD-43D2-B5C6-4DC3961A9AAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{11256553-5231-4536-98A2-E44C657A26FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11256553-5231-4536-98A2-E44C657A26FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11256553-5231-4536-98A2-E44C657A26FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E67D17C9-1DBD-43D2-B5C6-4DC3961A9AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E67D17C9-1DBD-43D2-B5C6-4DC3961A9AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E67D17C9-1DBD-43D2-B5C6-4DC3961A9AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E67D17C9-1DBD-43D2-B5C6-4DC3961A9AAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D0FC81BE-49FA-45B6-AF3A-E26124A8D174} = {DD6013C5-B840-4EAF-AFDB-06189E8F888E}
 		{11256553-5231-4536-98A2-E44C657A26FA} = {D0FC81BE-49FA-45B6-AF3A-E26124A8D174}
+		{E67D17C9-1DBD-43D2-B5C6-4DC3961A9AAE} = {D0FC81BE-49FA-45B6-AF3A-E26124A8D174}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B790CF25-8B92-4915-95A6-F691505BC417}
