@@ -1,4 +1,6 @@
+using System;
 using System.IO;
+using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,12 +29,16 @@ namespace OhpenCaseStudy.Api
 
                 var filePath = Path.Combine(System.AppContext.BaseDirectory, "OhpenCaseStudy.Api.xml");
                 c.IncludeXmlComments(filePath);
-                c.DescribeAllEnumsAsStrings();
+                //c.DescribeAllEnumsAsStrings();
             });
 
             services.AddTransient<IStringSortService, StringSortService>();
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(x =>
+            {
+                x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });
+            ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
