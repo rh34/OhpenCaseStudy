@@ -1,6 +1,6 @@
 using System;
 
-namespace OhpenCaseStudy
+namespace OhpenCaseStudy.Api
 {
     public class WeatherForecast
     {
