@@ -40,5 +40,6 @@
             <param name="input">Input to generate statistics for</param>
             <returns></returns>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:OhpenCaseStudy.Api.LambdaEntryPoint.Init(Microsoft.AspNetCore.Hosting.IWebHostBuilder)" -->
     </members>
 </doc>
