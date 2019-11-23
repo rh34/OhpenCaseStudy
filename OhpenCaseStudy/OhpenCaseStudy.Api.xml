@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OhpenCaseStudy.Api</name>
+    </assembly>
+    <members>
+        <member name="T:OhpenCaseStudy.Api.Controllers.StringSortController">
+            <summary>
+            String sort controller
+            </summary>
+        </member>
+        <member name="M:OhpenCaseStudy.Api.Controllers.StringSortController.#ctor(Microsoft.Extensions.Logging.ILogger{OhpenCaseStudy.Api.Controllers.StringSortController},OhpenCaseStudy.Domain.Services.IStringSortService)">
+            <summary>
+            String Sort Controller Constructor
+            </summary>
+            <param name="logger">Logger</param>
+            <param name="stringSortService">String sort service reference </param>
+        </member>
+        <member name="M:OhpenCaseStudy.Api.Controllers.StringSortController.Post(OhpenCaseStudy.Dtos.StringSort.SortInput)">
+            <summary>
+            Takes a text and sorting algorithm of your choice to process the result.
+            </summary>
+            <param name="sortInput">Holds the text and the desired sorting algorithm input</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
