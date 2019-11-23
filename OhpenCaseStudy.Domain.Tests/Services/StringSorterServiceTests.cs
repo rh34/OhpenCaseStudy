@@ -1,15 +1,15 @@
-﻿using NUnit.Framework;
-using OhpenCaseStudy.Domain.Services;
-using System;
+﻿using System;
 using FluentAssertions;
+using Microsoft.Extensions.Options;
 using Moq;
+using NUnit.Framework;
 using OhpenCaseStudy.Domain.Common;
 using OhpenCaseStudy.Domain.Factories;
+using OhpenCaseStudy.Domain.Services;
 using OhpenCaseStudy.Domain.SortAlgorithms;
 using OhpenCaseStudy.Dtos.StringSort;
-using Microsoft.Extensions.Options;
 
-namespace OhpenCaseStudy.Domain.Tests
+namespace OhpenCaseStudy.Domain.Tests.Services
 {
     [TestFixture]
     public class StringSorterServiceTests
