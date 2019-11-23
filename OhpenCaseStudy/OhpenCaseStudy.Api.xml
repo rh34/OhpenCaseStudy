@@ -23,5 +23,16 @@
             <param name="sortInput">Holds the text and the desired sorting algorithm input</param>
             <returns></returns>
         </member>
+        <member name="T:OhpenCaseStudy.Api.Controllers.TextStatisticsController">
+            <summary>
+            Generates statistics for a given texts
+            </summary>
+        </member>
+        <member name="M:OhpenCaseStudy.Api.Controllers.TextStatisticsController.#ctor(OhpenCaseStudy.Domain.Services.ITextStatisticsService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="textStatisticsService"></param>
+        </member>
     </members>
 </doc>

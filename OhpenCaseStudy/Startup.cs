@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using OhpenCaseStudy.Domain.Common;
 using OhpenCaseStudy.Domain.Factories;
 using OhpenCaseStudy.Domain.Services;
 using OhpenCaseStudy.Domain.SortAlgorithms;
@@ -34,9 +35,13 @@ namespace OhpenCaseStudy.Api
             });
 
             services.AddTransient<IStringSortService, StringSortService>();
+            services.AddTransient<ITextStatisticsService, TextStatisticsService>();
             services.AddTransient<SortAlgorithmFactory>();
             services.AddTransient<AlphabeticalSorter>();
             services.AddTransient<WordSizeSorter>();
+            services.AddTransient<CharacterWithinWordSorter>();
+
+            services.Configure<StringSettings>(Configuration.GetSection("StringSettings"));
 
             services.AddControllers().AddJsonOptions(x =>
             {

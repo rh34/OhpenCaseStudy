@@ -14,7 +14,8 @@ namespace OhpenCaseStudy.Domain.SortAlgorithms
 
             foreach (var splitWord in splitWords)
             {
-                result.Add(new string(splitWord.ToCharArray().OrderBy(c => c).ToArray()));
+                var sortedWord = new string(splitWord.ToCharArray().OrderBy(c => c).ToArray());
+                result.Add(sortedWord);
             }
 
             return result;
