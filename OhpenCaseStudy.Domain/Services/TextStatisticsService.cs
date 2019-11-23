@@ -6,6 +6,9 @@ using OhpenCaseStudy.Dtos.TextStatistics;
 
 namespace OhpenCaseStudy.Domain.Services
 {
+    /// <summary>
+    /// Statistics generator service
+    /// </summary>
     public class TextStatisticsService : ITextStatisticsService
     {
         private readonly StringSettings _stringSettings;
@@ -14,6 +17,12 @@ namespace OhpenCaseStudy.Domain.Services
         {
             _stringSettings = stringSettings.Value;
         }
+
+        /// <summary>
+        /// Generates statistics for a given text
+        /// </summary>
+        /// <param name="text">String input to generate statistics for</param>
+        /// <returns></returns>
         public TextStatisticsOutputDto GenerateStatistics(string text)
         {
             var separators = _stringSettings.Separators;

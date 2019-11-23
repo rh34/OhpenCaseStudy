@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using OhpenCaseStudy.Domain.Services;
 using OhpenCaseStudy.Dtos.StringSort;
 
@@ -12,18 +12,15 @@ namespace OhpenCaseStudy.Api.Controllers
     [Route("api/StringSort")]
     public class StringSortController : ControllerBase
     {
-        private readonly ILogger<StringSortController> _logger;
         private readonly IStringSortService _stringSortService;
 
 
         /// <summary>
         /// String Sort Controller Constructor
         /// </summary>
-        /// <param name="logger">Logger</param>
         /// <param name="stringSortService">String sort service reference </param>
-        public StringSortController(ILogger<StringSortController> logger, IStringSortService stringSortService)
+        public StringSortController(IStringSortService stringSortService)
         {
-            _logger = logger;
             _stringSortService = stringSortService;
         }
 
@@ -33,6 +30,7 @@ namespace OhpenCaseStudy.Api.Controllers
         /// <param name="sortInput">Holds the text and the desired sorting algorithm input</param>
         /// <returns></returns>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult Post([FromBody]SortInput sortInput)
         {
             var sortResult = _stringSortService.Sort(sortInput.Text, sortInput.SortEnum);

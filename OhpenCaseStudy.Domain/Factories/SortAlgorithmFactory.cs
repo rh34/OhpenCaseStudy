@@ -13,6 +13,12 @@ namespace OhpenCaseStudy.Domain.Factories
         {
             _serviceProvider = serviceProvider;
         }
+
+        /// <summary>
+        /// Returns a sorter algorithm instance based on sortEnum input
+        /// </summary>
+        /// <param name="sortEnum">Sort algorithm choice</param>
+        /// <returns></returns>
         public virtual ISorterAlgorithm GetSorter(SortEnum sortEnum)
         {
             switch (sortEnum)

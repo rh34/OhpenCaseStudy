@@ -9,11 +9,10 @@
             String sort controller
             </summary>
         </member>
-        <member name="M:OhpenCaseStudy.Api.Controllers.StringSortController.#ctor(Microsoft.Extensions.Logging.ILogger{OhpenCaseStudy.Api.Controllers.StringSortController},OhpenCaseStudy.Domain.Services.IStringSortService)">
+        <member name="M:OhpenCaseStudy.Api.Controllers.StringSortController.#ctor(OhpenCaseStudy.Domain.Services.IStringSortService)">
             <summary>
             String Sort Controller Constructor
             </summary>
-            <param name="logger">Logger</param>
             <param name="stringSortService">String sort service reference </param>
         </member>
         <member name="M:OhpenCaseStudy.Api.Controllers.StringSortController.Post(OhpenCaseStudy.Dtos.StringSort.SortInput)">
@@ -33,6 +32,13 @@
             Constructor
             </summary>
             <param name="textStatisticsService"></param>
+        </member>
+        <member name="M:OhpenCaseStudy.Api.Controllers.TextStatisticsController.GenerateStatistics(OhpenCaseStudy.Dtos.TextStatistics.TextStatisticsInputDto)">
+            <summary>
+            Generates statistics for Hyphen, Word and Space counts.
+            </summary>
+            <param name="input">Input to generate statistics for</param>
+            <returns></returns>
         </member>
     </members>
 </doc>
