@@ -6,13 +6,20 @@
     public enum SortEnum
     {
         None = 0,
+
         /// <summary>
         /// To sort words alphabetically
         /// </summary>
         AlphabeticalSortAlgorithm = 1,
+
         /// <summary>
-        /// To sort words based on their size
+        /// To sort words based on their character length
         /// </summary>
-        WordSizeSortAlgorithm = 2
+        WordSizeSortAlgorithm = 2,
+
+        /// <summary>
+        /// To sort characters in every word
+        /// </summary>
+        CharacterWithinWordAlgorithm = 3
     }
 }

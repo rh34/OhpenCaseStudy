@@ -21,6 +21,8 @@ namespace OhpenCaseStudy.Domain.Factories
                     return _serviceProvider.GetRequiredService<AlphabeticalSorter>();
                 case SortEnum.WordSizeSortAlgorithm:
                     return _serviceProvider.GetRequiredService<WordSizeSorter>();
+                case SortEnum.CharacterWithinWordAlgorithm:
+                    return _serviceProvider.GetRequiredService<CharacterWithinWordSorter>();
                 default:  
                     throw new NotImplementedException($"Sorter Algorithm is not implemented for SortEnum: {sortEnum}");
             }
