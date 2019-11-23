@@ -7,7 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using OhpenCaseStudy.Domain.Factories;
 using OhpenCaseStudy.Domain.Services;
+using OhpenCaseStudy.Domain.SortAlgorithms;
 
 namespace OhpenCaseStudy.Api
 {
@@ -33,12 +35,16 @@ namespace OhpenCaseStudy.Api
             });
 
             services.AddTransient<IStringSortService, StringSortService>();
+            services.AddTransient<SortAlgorithmFactory>();
+            services.AddTransient<AlphabeticalSorter>();
+            services.AddTransient<WordSizeSorter>();
 
             services.AddControllers().AddJsonOptions(x =>
             {
                 x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
             });
-            ;
+
+            services.AddOptions();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
