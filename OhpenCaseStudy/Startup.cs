@@ -27,6 +27,7 @@ namespace OhpenCaseStudy.Api
 
                 var filePath = Path.Combine(System.AppContext.BaseDirectory, "OhpenCaseStudy.Api.xml");
                 c.IncludeXmlComments(filePath);
+                c.DescribeAllEnumsAsStrings();
             });
 
             services.AddTransient<IStringSortService, StringSortService>();

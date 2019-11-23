@@ -20,7 +20,7 @@
     "OhpenCaseStudy": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "StringSort",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
