@@ -5,8 +5,6 @@
     /// </summary>
     public enum SortEnum
     {
-        None = 0,
-
         /// <summary>
         /// To sort words alphabetically
         /// </summary>

@@ -33,11 +33,5 @@ namespace OhpenCaseStudy.Domain.Tests.Factories
             var sorter = _sortAlgorithmFactory.GetSorter(sortEnum);
             sorter.Should().BeOfType(type);
         }
-
-        [Test]
-        public void WhenEnumIsNotFound_ThrowsNotImplementedException()
-        {
-            _sortAlgorithmFactory.Invoking(t=>t.GetSorter(SortEnum.None)).Should().Throw<NotImplementedException>();
-        }
     }
 }
