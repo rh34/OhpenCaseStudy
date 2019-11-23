@@ -4,6 +4,6 @@ namespace OhpenCaseStudy.Domain.Services
 {
     public interface ITextStatisticsService
     {
-        TextStatisticsOutputDto GenerateStatistics(string text);
+        TextStatistics GenerateStatistics(string text);
     }
 }

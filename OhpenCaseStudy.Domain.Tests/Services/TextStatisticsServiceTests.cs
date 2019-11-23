@@ -27,7 +27,7 @@ namespace OhpenCaseStudy.Domain.Tests.Services
         [TestCase("alkan--- -kaya-abc abd bbb ddealkan  - -kaya-abc abd bbb dde", 8, 11, 10)]
         public void When_StatiscsAreQueried_ReturnsCorrectResponse(string text, int hyphenCount, int wordCount, int spaceCount)
         {
-            _textStatisticsService.GenerateStatistics(text).Should().BeEquivalentTo(new TextStatisticsOutputDto()
+            _textStatisticsService.GenerateStatistics(text).Should().BeEquivalentTo(new TextStatistics()
             {
                 HyphenCount = hyphenCount,
                 WordCount = wordCount,

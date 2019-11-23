@@ -30,7 +30,7 @@ namespace OhpenCaseStudy.Api.Controllers
         /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<TextStatisticsOutputDto> GenerateStatistics(TextStatisticsInputDto input)
+        public ActionResult<TextStatistics> GenerateStatistics(TextStatisticsInputDto input)
         {
             var result = _textStatisticsService.GenerateStatistics(input.Text);
             return Ok(result);

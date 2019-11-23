@@ -3,7 +3,7 @@
     /// <summary>
     /// Holds statistics for a given text
     /// </summary>
-    public class TextStatisticsOutputDto
+    public class TextStatistics
     {
         /// <summary>
         /// Hyphen count in a given text 

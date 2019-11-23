@@ -23,12 +23,12 @@ namespace OhpenCaseStudy.Domain.Services
         /// </summary>
         /// <param name="text">String input to generate statistics for</param>
         /// <returns></returns>
-        public TextStatisticsOutputDto GenerateStatistics(string text)
+        public TextStatistics GenerateStatistics(string text)
         {
             var separators = _stringSettings.Separators;
             //var matches = Regex.Matches(text, @"\s|-");
 
-            var result = new TextStatisticsOutputDto
+            var result = new TextStatistics
             {
                 HyphenCount = Regex.Matches(text, @"-").Count,
                 WordCount = text.Split(separators, StringSplitOptions.RemoveEmptyEntries).Length,
