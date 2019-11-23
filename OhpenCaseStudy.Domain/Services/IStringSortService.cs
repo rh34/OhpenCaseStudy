@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OhpenCaseStudy.Dtos.StringSort;
+﻿using OhpenCaseStudy.Dtos.StringSort;
 
 namespace OhpenCaseStudy.Domain.Services
 {

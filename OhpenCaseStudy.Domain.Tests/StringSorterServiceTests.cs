@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using OhpenCaseStudy.Domain.Services;
 using System;
-using System.Collections.Generic;
 using FluentAssertions;
 using Moq;
 using OhpenCaseStudy.Domain.Factories;

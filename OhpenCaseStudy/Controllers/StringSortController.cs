@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OhpenCaseStudy.Domain.Services;
-using OhpenCaseStudy.Dtos;
 using OhpenCaseStudy.Dtos.StringSort;
 
 namespace OhpenCaseStudy.Api.Controllers

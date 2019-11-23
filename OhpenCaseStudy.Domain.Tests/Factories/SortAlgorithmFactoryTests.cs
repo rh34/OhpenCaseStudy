@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using FluentAssertions;
 using Moq;
 using NUnit.Framework;
 using OhpenCaseStudy.Domain.Factories;
 using OhpenCaseStudy.Domain.SortAlgorithms;
 using OhpenCaseStudy.Dtos.StringSort;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace OhpenCaseStudy.Domain.Tests.Factories
 {

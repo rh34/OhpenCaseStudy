@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OhpenCaseStudy.Dtos.StringSort
+﻿namespace OhpenCaseStudy.Dtos.StringSort
 {
     public class SortInput
     {

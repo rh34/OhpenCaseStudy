@@ -1,11 +1,7 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using FluentAssertions;
 using OhpenCaseStudy.Domain.SortAlgorithms;
-using OhpenCaseStudy.Dtos.StringSort;
 
 namespace OhpenCaseStudy.Domain.Tests.SortAlgorithms
 {

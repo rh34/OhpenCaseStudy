@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using System.Globalization;
-using OhpenCaseStudy.Domain.Factories;
+﻿using OhpenCaseStudy.Domain.Factories;
 using OhpenCaseStudy.Dtos.StringSort;
 
 namespace OhpenCaseStudy.Domain.Services
