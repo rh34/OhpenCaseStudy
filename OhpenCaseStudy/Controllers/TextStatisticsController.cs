@@ -27,6 +27,11 @@ namespace OhpenCaseStudy.Api.Controllers
             _textStatisticsService = textStatisticsService;
         }
 
+        /// <summary>
+        /// Generates statistics for Hyphen, Word and Space counts.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult<TextStatisticsOutputDto> GenerateStatistics(string text)
         {
