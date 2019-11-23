@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OhpenCaseStudy.Domain\OhpenCaseStudy.Domain.csproj" />
+    <ProjectReference Include="..\OhpenCaseStudy.Dtos\OhpenCaseStudy.Dtos.csproj" />
   </ItemGroup>
 
 </Project>
