@@ -26,10 +26,16 @@ namespace OhpenCaseStudy.Domain.Tests.Factories
 
         [TestCase(SortEnum.AlphabeticalSortAlgorithm, typeof(AlphabeticalSorter))]
         [TestCase(SortEnum.WordSizeSortAlgorithm, typeof(WordSizeSorter))]
-        public void When_EnumIsProvided_FactoryReturns(SortEnum sortEnum, Type type)
+        public void WhenEnumIsProvided_FactoryReturnsCorrectSorter(SortEnum sortEnum, Type type)
         {
             var sorter = _sortAlgorithmFactory.GetSorter(sortEnum);
             sorter.Should().BeOfType(type);
+        }
+
+        [Test]
+        public void WhenEnumIsNotFound_ThrowsNotImplementedException()
+        {
+            _sortAlgorithmFactory.Invoking(t=>t.GetSorter(SortEnum.None)).Should().Throw<NotImplementedException>();
         }
     }
 }
