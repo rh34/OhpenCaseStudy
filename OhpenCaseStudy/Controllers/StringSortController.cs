@@ -9,7 +9,7 @@ namespace OhpenCaseStudy.Api.Controllers
     /// String sort controller
     /// </summary>
     [ApiController]
-    [Route("StringSort")]
+    [Route("api/StringSort")]
     public class StringSortController : ControllerBase
     {
         private readonly ILogger<StringSortController> _logger;
